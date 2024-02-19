@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId("id_petugas")->references("id_petugas")->on("petugass");
             $table->char("nisn", 10);
             $table->foreign("nisn")->references("nisn")->on("siswas");
-            $table->date("tgl_bayar", 255);
+            $table->date("tgl_bayar");
             $table->string("bulan_dibayar", 255);
             $table->string("tahun_dibayar", 255);
             $table->foreignId("id_spp")->references("id_spp")->on("siswas");
